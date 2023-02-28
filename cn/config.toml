@@ -1,0 +1,125 @@
+baseURL = 'http://example.org/'
+languageCode = 'zh'
+title = '梁 家瑞'
+theme = 'alpha-church'
+
+rssLimit = 5
+paginate = 4
+
+enableEmoji = true
+
+googleAnalytics = ""
+enableInlineShortcodes = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Bio"
+    url = "/bio"
+    weight = 2  
+[[menu.main]]
+    name = "Articles"
+    url = "/articles"
+    weight = 3
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 4
+[[menu.main]]
+  name = "Language"
+  url = "/"
+  weight = 5
+
+[[menu.main]]
+  name = "简体中文"
+  parent = "Language"
+  url = "/cn"
+  weight = 1
+[[menu.main]]
+  name = "English"
+  parent = "Language"
+  url = "/"
+  weight = 2
+[[menu.main]]
+  name = "日本語"
+  parent = "Language"
+  url = "/jp"
+  weight = 3
+
+
+[params]
+  title = "Liang Jiarui"
+  keywords = ["theme", "hugo", "podcast"]
+  languageCode = "en" # For accessibility this needs to be set. You can find all language codes at https://www.w3schools.com/tags/ref_language_codes.asp
+  instant_page = true
+
+  customCSS = ["example.css"]
+
+  [params.favicon]
+    sml = "/example16.png"
+    med = "/example32.png"
+    #lge = "example96.png"
+
+  [params.banner]
+    image = "img/header.jpg"
+
+  [params.contact]
+    #Use this section to automate contact form.
+    #Set service to either "netlify", "formspree" or "php"
+    #For formspree, please setup an account at https://formspree.io/
+    #For netlify, please read https://www.netlify.com/docs/form-handling/
+    #
+    #If you use netlify, you'll need to set the confirm_page value (otherwise users will see a generic netlify response)
+    #If you use formspree, you'll need to set your formspree form_id.
+    #
+    #If you use php, you need to host this site on a Server capable of running php.
+    # Please edit the /static/contact_mail.php file from the exampleSite.
+    service = "netlify" #or "formspree" or "php"
+    confirm_page = "/contact_thanks" #only used by netlify
+    # formspree_formid="" #only used by formspree
+
+
+    [params.footer]
+      copyright = ["Liang Jiarui",
+                   "Design: [HTML5 UP](//html5up.net/alpha)",
+                   "[Hugo Port](//gohugo.io) by [Daniel Saunders](//github.com/funkydan2)"
+                  ]
+
+    [[params.links]]
+      service = "Linkedin"
+      icon = "fa-linkedin"
+      icon_pack = "fab"
+      link = "https://www.linkedin.com/in/jiarui-liang-284b58141/"
+    [[params.links]]
+      service = "Facebook"
+      icon = "fa-facebook"
+      icon_pack = "fab"
+      link = "https://www.facebook.com/profile.php?id=100004143887136"
+    [[params.links]]
+      service = "Instagram"
+      icon = "fa-instagram"
+      icon_pack = "fab"
+      link = "https://www.instagram.com/jrliangbinich/"
+    [[params.links]]
+      service = "Twitter"
+      icon = "fa-twitter"
+      icon_pack = "fab"
+      link = "https://twitter.com/JiaruiLiang2000"
+    [[params.links]]
+      service = "Github"
+      icon = "fa-github"
+      icon_pack = "fab"
+      link = "https://github.com/jrliang2000"
+    [[params.links]]
+      service = "Youtube"
+      icon = "fa-youtube"
+      icon_pack = "fab"
+      link = "https://www.youtube.com/channel/UCLkNkQ1CRYGfcX-uaaaTIMw"
+    [[params.links]]
+      service = "Bilibili"
+      icon = "fa-bilibili"
+      icon_pack = "fab"
+      link = "https://space.bilibili.com/11660067"
